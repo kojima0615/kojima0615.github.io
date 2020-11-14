@@ -1,0 +1,294 @@
+@charset "utf-8";
+
+@import url("keyframes.css");
+@import url("slide.css");
+
+body {
+	margin: 0px;padding: 0px;
+	font-family: "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 16px;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	color: #666;		/*文字色*/
+	background: #fff;	/*背景色*/
+	-webkit-text-size-adjust: none;
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,select,textarea,input {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+ul {list-style-type: none;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+video {max-width: 100%;}
+iframe {width: 100%;}
+
+a {
+	color: #666;
+	transition: 0.4s;
+}
+a:hover {
+	color: #0074ea;
+	text-decoration: none;
+}
+
+header {
+	position: fixed;	/*ヘッダーを上部に固定する指定*/
+	z-index: 1;
+	left: 0px;			/*左からの配置場所の指定*/
+	top: 0px;			/*上からの配置場所の指定*/
+	width: 100%;		/*幅*/
+	background: #000;	/*背景色*/
+	font-size: 13px;	/*文字サイズ*/
+    height: 70px;		/*ヘッダーの高さ*/
+    z-index: 2;
+}
+
+
+header #logo{
+    white-space: nowrap;
+    font-size:200%;
+    font:"Hiragino Maru Gothic Pro";
+    padding: 10px 100px 10px 50px;	/*上下、左右へのメニュー内の余白*/
+    font-weight:bold;
+    color: #0074ea;
+    width: 15%;	
+	height: 50px;	/*高さ。上のheaderのheightと合わせる。*/
+	float: left;	/*左に回り込み*/
+	background:#000;	/*背景色*/
+}
+
+/*メニューブロック全体*/
+#menubar {
+	float: left;
+}
+/*メニュー１個あたりの指定*/
+#menubar li {
+	float: left;
+	letter-spacing: 0.1em;
+}
+#menubar li a {
+	display: block;text-decoration: none;
+	color: #fff;	/*文字色*/
+	padding: 10px 20px;	/*上下、左右へのメニュー内の余白*/
+	line-height: 50px;	/*行間。headerのheightと数字を合わせる。*/
+}
+/*マウスオン時の背景色*/
+#menubar li a:hover {
+	background: #0074ea !important;
+}
+
+
+/*小さい端末用メニューを非表示にする*/
+header #logo-s{display: none;}
+#menubar-s{display: none;}
+
+/*コンテンツ（contents）
+---------------------------------------------------------------------------*/
+/*コンテンツブロック全体*/
+#contents {
+	margin-top: 100px;	/*上に空ける余白。headerとの間に空けたいスペースを調整して下さい*/
+    padding: 3%;		/*コンテンツ内の余白*/
+    background:#2f3640;		/*背景色*/
+}
+/*トップページのコンテンツへの追加指定*/
+.home #contents {
+	margin-top: 370px;	/*スライドショーの高さに合わせて調整して下さい*/
+}
+/*h2タグ*/
+#contents h2 {
+    border-bottom: 3px solid #0074ea;	/*左の線の幅、線種、色*/
+    font:"Hiragino Maru Gothic Pro";
+    font-weight:bold;
+	clear: both;
+	margin-bottom: 20px;	/*下に空けるスペース*/
+	font-size: 150%;		/*文字サイズ*/
+	background:#2f3640;	/*背景色*/
+	color: white;			/*文字色*/
+	line-height: 50px;		/*行間*/
+	padding-left: 30px;		/*左に空ける余白*/
+}
+/*h2タグ内のspanタグ*/
+#contents h2 span {
+	font-size: 80%;	/*文字サイズ*/
+	padding-left: 20px	/*左に空ける余白*/
+}
+/*h2タグ内のspanタグの文字の最初と最後に表示させる記号*/
+#contents h2 span::before,#contents h2 span::after {
+	content: "-";
+}
+/*h3タグ*/
+#contents h3 {
+	clear: both;
+	margin-bottom: 20px;	/*下に空けるスペース*/
+	font-size: 120%;		/*文字サイズ*/
+	border-bottom: 2px solid #000;	/*下の線の幅、線種、色*/
+	padding-left: 20px;		/*左に空ける余白*/
+}
+/*段落タグ設定*/
+#contents p {
+	padding: 0px 20px 20px;	/*上、左右、下への余白*/
+}
+/*他。微調整。*/
+#contents p + p {
+	margin-top: -5px;
+}
+#contents h2 + p,
+#contents h3 + p {
+	margin-top: -10px;
+}
+#contents section + section {
+	margin-top: 30px;
+}
+
+/*list（トップページやServiceページで使っている横長ブロック）
+---------------------------------------------------------------------------*/
+/*ボックスの設定*/
+#contents .list {
+	position: relative;overflow: hidden;
+	display: flex;
+	align-items: center;
+	background: #000;	/*背景色*/
+	color: #fff;		/*文字色*/
+	margin-bottom: 1px;	/*ボックス同士に空けるスペース*/
+}
+#contents .list .fa-github-square{
+    position: relative;
+    padding-left:40px;
+    color: blue;
+    font-size:3em;
+}
+/*リンクテキストの文字色*/
+#contents .list a {
+	color: #fff;
+}
+/*ボックス内のh4（見出し）タグ*/
+#contents .list h4 {
+	margin-bottom: 10px;	/*下のテキストとの間に空けるスペース*/
+	font-size: 120%;		/*文字サイズ*/
+}
+/*ボックス内のp（段落）タグ*/
+#contents .list p {
+	padding: 0;		/*余白のリセット*/
+}
+/*ボックス内のfigure画像*/
+#contents .list figure {
+	float: left;	/*左に回り込み*/
+	width: 30%;		/*画像の幅*/
+}
+/*「class="text"」を指定したブロック。テキストブロック。*/
+#contents .list .text {
+	float: right;	/*右に回り込み*/
+	width: 64%;		/*幅*/
+	margin: 3%;		/*外側に取るスペース。これがないと枠ギチギチに文字が表示されます。*/
+}
+#contents ul{
+    list-style-type: square;
+}
+
+/*PAGE TOP（↑）設定
+---------------------------------------------------------------------------*/
+/*通常時のボタンは非表示*/
+body .nav-fix-pos-pagetop a {display: none;}
+/*fixmenu_pagetop.jsで設定している設定値になったら出現するボタンスタイル*/
+body.is-fixed-pagetop .nav-fix-pos-pagetop a {
+	display: block;text-decoration: none;text-align: center;
+	width: 50px;		/*幅*/
+	line-height: 50px;	/*高さ*/
+	z-index: 1;
+	position: fixed;
+	bottom: 20px;	/*下から20pxの場所に配置*/
+	right: 3%;		/*右から3%の場所に配置*/
+	background: #666;	/*背景色（古いブラウザ用）*/
+	background: rgba(0,0,0,0.6);	/*背景色。0,0,0は黒の事。0.6は60%色がついた状態。*/
+	color: #fff;	/*文字色*/
+	border: 1px solid #fff;	/*枠線の幅、線種、色*/
+	animation-name: opa1;	/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 1S;	/*アニメーションの実行時間*/
+	animation-fill-mode: both;	/*アニメーションの待機中は最初のキーフレームを維持、終了後は最後のキーフレームを維持。*/
+}
+/*マウスオン時*/
+body.is-fixed-pagetop .nav-fix-pos-pagetop a:hover {
+	background: #999;	/*背景色*/
+}
+
+/*画面幅900px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:900px){
+
+/*メインメニュー
+---------------------------------------------------------------------------*/
+/*スマホ用メニューブロック全体*/
+#menubar-s {
+	display: block;overflow: auto;height: 100%;
+	text-align: left;
+	position: fixed;z-index: 100;
+	top: 0px;
+	width: 100%;
+	background: rgba(0,0,0,0.8);	/*背景色*/
+	border-top: 1px solid #fff;		/*上の線の幅、線種、色*/
+	animation-name: opa1;		/*keyframes.cssで使う@keyframesの指定*/
+	animation-duration: 0.5s;	/*アニメーションの実行時間。0.5秒。*/
+	animation-fill-mode: both;	/*待機中は最初のキーフレームを、完了後は最後のキーフレームを維持*/
+    font-size: 16px;	/*文字サイズ*/
+}
+/*メニュー１個あたりの設定と、子メニューの見出し。*/
+#menubar-s ul li a {
+	display: block;text-decoration: none;
+	padding: 10px 15px;	/*上下、左右へのメニュー内の余白*/
+	border-bottom: 1px solid #fff;	/*下の線の幅、線種、色*/
+	color: #fff;		/*文字色*/
+}
+/*PC用メニューを非表示にする*/
+#menubar {display: none;}
+
+}
+
+
+
+
+
+/*画面幅600px以下の設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:600px){
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+body {
+	font-size: 12px;
+	font-size: 2.93vw;
+}
+
+/*ヘッダーブロック（ロゴやメニューが入った最上段ブロック）
+---------------------------------------------------------------------------*/
+/*ヘッダーブロック*/
+header {
+	height: 70px;		/*ヘッダーの高さ*/
+	background:black;	/*背景色*/
+	text-align: center;
+}
+/*ロゴ画像*/
+header #logo img {
+	float: none;	/*左に回り込み*/
+}
+/*コンテンツ（contents）
+---------------------------------------------------------------------------*/
+/*コンテンツブロック全体*/
+#contents {
+	margin-top: 100px;	/*上に空ける余白。headerとの間に空けたいスペースを調整して下さい*/
+}
+/*トップページのコンテンツへの追加指定*/
+.home #contents {
+	margin-top: 400px;	/*スライドショーの高さに合わせて調整して下さい*/
+}
+/*h2タグ*/
+#contents h2 {
+	border-left: 5px solid #0074ea;	/*左の線の幅、線種、色*/
+	line-height: inherit;
+	padding-left: 10px;		/*左に空ける余白*/
+}
+/*h3タグ*/
+#contents h3 {
+	padding-left: 15px;		/*左に空ける余白*/
+}
+/*段落タグ設定*/
+#contents p {
+	padding: 0px 15px 20px;	/*上、左右、下への余白*/
+}
+}
