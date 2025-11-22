@@ -2,181 +2,323 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/index_C.css">
-    <script src="js/openclose.js"></script>
-    <script src="js/fixmenu_pagetop.js"></script>
-    <script src="js/ddmenu_min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kenta Kojima | Hardware Security Lab</title>
+  <meta
+    name="description"
+    content="Kenta Kojima is a hardware security researcher and developer at Tohoku University. This page summarizes skills, education, and contact information."
+  >
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-jLKHWMZcJX3h67F3FFX2GDMTQ2bMnYa1zks4I8x0nk//tR5VjuYLWJp8yU0J8R4Q"
+    crossorigin="anonymous"
+  >
+  <script defer src="js/nav-toggle.js"></script>
 </head>
 
-<body class="home">
+<body>
+  <div class="page">
+    <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark">KK</span>
+          <div>
+          <p class="brand-name">Kenta Kojima</p>
+          <p class="brand-subtitle">OptHub Inc. · CTO</p>
+          </div>
+        </div>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation</span>
+      </button>
+      <nav id="main-nav" class="primary-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#qualification">Qualification</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-    <div id="container">
-        <header>
-            <nav id="logo">
-                <h1>KENTA KOJIMA</h1>
-            </nav>
-            <nav id="logo-s">
-                <h1>KENTA KOJIMA</h1>
-            </nav>
-            <nav id="menubar">
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-content">
+          <p class="eyebrow">Optimization Engineering · Cloud Infrastructure</p>
+          <h1>Optimization architect, cloud-infrastructure practitioner, and CTO</h1>
+          <p class="lead">
+            CTO at OptHub Inc. since May 2025, aligning product strategy, optimization algorithms, and
+            an engineering organization that spans edge and cloud systems.
+          </p>
+          <p class="lead">
+            Completed a master’s degree at Institute of Science Tokyo, designing optimization methods
+            that combine evolutionary computation and deep learning, then transitioned into AWS infrastructure
+            engineering focused on Linux, virtualization, and networking before stepping into the CTO role.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#contact">Contact</a>
+            <a class="button ghost" href="https://github.com/kojima0615">
+              <i class="fab fa-github"></i>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <figure>
+            <img src="images/photo1.jpg" alt="Profile photo of Kenta Kojima">
+            <figcaption>OptHub Inc. CTO · Institute of Science Tokyo alum</figcaption>
+          </figure>
+          <div class="hero-card">
+            <h3>Interests</h3>
+            <ul>
+              <li>Optimization</li>
+              <li>Cloud Infrastructure</li>
+              <li>Leadership &amp; Management</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-grid" id="skills">
+        <div class="section-heading">
+          <h2>Skills</h2>
+          <p>Algorithmic depth, leadership experience, and the technical stack that ties them together.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card skill-card">
+            <div class="card-body">
+              <h3>Algorithm &amp; Engineering</h3>
+              <ul>
+                <li>Algorithm Design (Heuristics / Deterministic Algorithms / Combinatorial Optimization)</li>
+                <li>Competitive Programming (algorithmic problem-solving, complexity optimization)</li>
+                <li>Machine Learning &amp; Deep Learning</li>
+                <li>Cloud Infrastructure Architecture (from low-level systems to application layer)</li>
+                <li>Performance Optimization (mathematical optimization, computational acceleration, distributed systems)</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card skill-card">
+            <div class="card-body">
+              <h3>Leadership &amp; Management</h3>
+              <ul>
+                <li>Project Management</li>
+                <li>Sales &amp; Technical Sales</li>
+                <li>Technology Leadership</li>
+                <li>Hiring &amp; Team Building</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card skill-card">
+            <div class="card-body">
+              <h3>Technical Stack</h3>
+              <div class="skill-subgroup">
+                <h4>Languages</h4>
                 <ul>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <!--<li><a href="#publications">Pubilications</a></li>-->
-                    <li><a href="#qualification">Qualification</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                  <li>Java</li>
+                  <li>C++</li>
+                  <li>Python</li>
+                  <li>TypeScript</li>
                 </ul>
-            </nav>
-            <nav id="menubar-s">
+              </div>
+              <div class="skill-subgroup">
+                <h4>Systems &amp; Infrastructure</h4>
                 <ul>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <!--<li><a href="#publications">Pubilications</a></li>-->
-                    <li><a href="#qualification">Qualification</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                  <li>Linux / Hypervisor Technologies (KVM / QEMU / Xen)</li>
+                  <li>Container Platforms (Docker / Kubernetes)</li>
+                  <li>Block Storage (EBS / LVM / Ceph / RAID)</li>
+                  <li>DevOps (CI/CD, IaC, Monitoring, Logging)</li>
                 </ul>
-            </nav>
-        </header>
-        <div id="contents">
-            <section>
-                <h2 id="about me">About me</h2>
-                <div class="list">
-                    <figure><img src="images/photo1.jpg" alt=""></figure>
-                    <div class="text">
-                        <h4>Kenta Kojima<a href="https://github.com/kojima0615"><i class="fab fa-github-square"></i></a></h4>
-                        <p>4th year undergraduate student in Tohoku University</p>
-                        <p>Hardware Security Lab</p>
-                    </div>
-                </div>
-                <div class="list">
-                    <figure><img src="images/photo2.jpg" alt=""></figure>
-                    <div class="text">
-                        <h4>Interests</h4>
-                        <ul>
-                            <li>Artificial Intelligence</li>
-                            <li>Hardware Security</li>
-                            <li>Competitive Programming</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2 id="skills">Skills</h2>
-
-                <div class="list">
-                    <figure><img src="images/photo3.jpg" alt=""></figure>
-                    <div class="text">
-                        <h4>Programming Languages</h4>
-                        <ul>
-                            <li>C++</li>
-                            <li>Python</li>
-                            <li>Verilog HDL</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="list">
-                    <figure><img src="images/photo4.png" alt=""></figure>
-                    <div class="text">
-                        <h4>Competitive Programming</h4>
-                        <p>Atcoder Syan</p>
-                        <p><a href="https://atcoder.jp/users/renjyaku">Account Name:renjyaku</a></p>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2 id="education">Education</h2>
-
-                <div class="list">
-                    <figure><img src="images/photo5.jpg" alt=""></figure>
-                    <div class="text">
-                        <ul>
-                            <li>Apr.2021.:Master's student of Graduate Major in Artificial Intelligence, School of
-                                Computing, Tokyo Institute of Technology, Tokyo, Japan</li>
-                            <li>Apr.2017-May.2021.:Bachelor of Enginneriing, Department of Electrical, Information and
-                                Physics Engineering, Tohoku University, Miyagi,
-                                Japan (Advisor: Prof. Honma Naohumi)</li>
-                            <li>Apr.2014-May.2017.:Saitama Prefectural Urawa High School</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!--論文書けたら埋めてね-->
-            <!--
-            <section>
-                <h2 id="publications">Publications</h2>
-            
-                <div class="list">
-                    <figure><img src="images/no_img.jpg" alt=""></figure>
-                    <div class="text">
-                        <h4>None</h4>
-                    </div>
-                </div>
-            </section>
-            -->
-            <section>
-                <h2 id="qualification">Qualification</h2>
-
-                <div class="list">
-                    <figure><img src="images/IPA1.jpg" alt=""></figure>
-                    <div class="text">
-                        <ul>
-                            <li>Dec.2019.:Applied Information Technology Engineer Examination</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section>
-                <h2 id="contact">Contact</h2>
-
-                <div class="list">
-                    <figure><img src="images/mail.png" alt=""></figure>
-                    <div class="text">
-                        <h4>Mail</h4>
-                        <p>kenta.int.tech@gmail.com</p>
-                        <h4>Address</h4>
-                        <p>環境調和型セキュア情報システム研究室（本間研究室）
-                            東北大学電気通信研究所　本館
-                            〒980-8577
-                            仙台市青葉区片平2-1-1</p>
-                    </div>
-                </div>
-            </section>
+              </div>
+            </div>
+          </article>
         </div>
+      </section>
 
-
-    </div>
-
-
-
-    <!--背景スライドショー-->
-    <aside id="mainimg">
-        <div class="slide0">
-            <p>Biography</p>
+      <section class="section-grid" id="experience">
+        <div class="section-heading">
+          <h2>Experience</h2>
+          <p>Leadership and cloud operations that span strategic CTO work and large-scale infrastructure.</p>
         </div>
-        <div class="slide1">
-            <p>Biography</p>
+        <div class="experience-grid">
+          <article class="experience-card">
+            <div class="experience-card-header">
+              <img src="images/opthub-logo.svg" alt="OptHub logo">
+              <div>
+                <p class="timeline-date">May 2025 – Present</p>
+                <h3>OptHub Inc. · CTO</h3>
+              </div>
+            </div>
+            <p>
+              Leading technology strategy and product architecture at OptHub, fostering AI-infused matching
+              services and overseeing full-stack execution from Edge devices to cloud-native platforms.
+            </p>
+          </article>
+          <article class="experience-card">
+            <div class="experience-card-header">
+              <img src="https://logo.clearbit.com/aws.amazon.com" alt="Amazon Web Services logo">
+              <div>
+                <p class="timeline-date">Apr 2023 – Jun 2025</p>
+                <h3>Amazon Web Services · Linux &amp; Cloud Infrastructure</h3>
+              </div>
+            </div>
+            <p>
+              Managed core Linux-based infrastructure and automation tooling to support mission-critical cloud
+              services in the Japan region, always emphasizing reliability, automation, and observability.
+            </p>
+          </article>
+          <article class="experience-card">
+            <div class="experience-card-header">
+              <img src="https://logo.clearbit.com/future.co.jp" alt="Future Corporation logo">
+              <div>
+                <p class="timeline-date">Jun 2021 – May 2022</p>
+                <h3><a href="https://www.future.co.jp/architect/" target="_blank" rel="noopener noreferrer">Future Corporation</a> · Data Scientist</h3>
+              </div>
+            </div>
+            <p>
+              Contributed as a data scientist, implementing deep learning models and performing data analysis
+              for client-facing architecture projects.
+            </p>
+          </article>
         </div>
-        <div class="slide2">
-            <p>Biography</p>
+      </section>
+
+      <section class="section-grid" id="education">
+        <div class="section-heading">
+          <h2>Education</h2>
+          <p>Study and research milestones.</p>
         </div>
-        <div class="slide3">
-            <p>Biography</p>
+        <div class="timeline">
+          <article class="timeline-item">
+            <img class="timeline-logo" src="images/isct-symbol.webp" alt="Institute of Science Tokyo symbol">
+            <p class="timeline-date">Apr 2021 – Mar 2023</p>
+            <h3>Master's in Information Science and Engineering</h3>
+            <p>Institute of Science Tokyo · School of Information Science and Engineering (evolutionary computation × deep learning for optimization)</p>
+          </article>
+          <article class="timeline-item">
+            <img class="timeline-logo" src="images/tohoku-logo.svg" alt="Tohoku University logo">
+            <p class="timeline-date">Apr 2017 – May 2021</p>
+            <h3>Bachelor of Engineering</h3>
+            <p>Department of Electrical, Information and Physics Engineering, Tohoku University · Advisor: Prof. Honma Naohumi</p>
+          </article>
+          <article class="timeline-item">
+            <img class="timeline-logo" src="images/urawa-logo.png" alt="Saitama Prefectural Urawa High School logo">
+            <p class="timeline-date">Apr 2014 – May 2017</p>
+            <h3>Saitama Prefectural Urawa High School</h3>
+          </article>
         </div>
-    </aside>
+      </section>
 
-    <!--ページの上部に戻る「↑」ボタン-->
-    <p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+      <section class="section-grid" id="qualification">
+        <div class="section-heading">
+          <h2>Qualification</h2>
+          <p>Industry-recognized certification.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3>AWS Certified Solutions Architect – Associate</h3>
+              <p>Amazon Web Services (AWS) · April 2024</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Rising Star Award</h3>
+              <p>Amazon Web Services (AWS) · November 2023</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Applied Information Technology Engineer</h3>
+              <p>IPA · December 2019</p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <!--メニューの開閉処理条件設定　900px以下-->
-    <script>
-        if (OCwindowWidth() <= 900) {
-            open_close("menubar-s");
-        }
-    </script>
+      <section class="section-grid" id="publications">
+        <div class="section-heading">
+          <h2>Publications</h2>
+          <p>Peer-reviewed work and technical writing.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3>A Memetic Algorithm based on Variational Autoencoder for Black-Box Discrete Optimization with Epistasis among Parameters</h3>
+              <p>IEEE CEC 2025 · April 30, 2025</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>Stage-Oriented Agent Role Simulator Toolkitと1億人規模COVID-19シミュレーションによる実行性能評価</h3>
+              <p>計測自動制御学会 システム・情報部門 第27回社会システム部会研究会 資料145-152 · March 8, 2022</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>マスキング対策された暗号ハードウェアへの深層学習を用いたサイドチャネル解析</h3>
+              <p>信学技報, vol. 121, no. 121, HWS2021-23, pp. 80-85 · July 20, 2021</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <h3>進化計算コンペティション2024を支えるさくらのクラウド</h3>
+              <p><a href="https://knowledge.sakura.ad.jp/44363/" target="_blank" rel="noopener noreferrer">https://knowledge.sakura.ad.jp/44363/</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
 
+      <section class="section-grid" id="awards">
+        <div class="section-heading">
+          <h2>Awards</h2>
+          <p>Recognition for research contributions.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <h3>進化計算学会研究会 ベストポスター発表賞</h3>
+              <p>進化計算学会 · March 2023</p>
+              <p>シンボリック回帰のための分布推定アルゴリズム</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-grid contact" id="contact">
+        <div class="section-heading">
+          <h2>Contact</h2>
+          <p>Reach out for collaboration, questions, or opportunities.</p>
+        </div>
+        <div class="contact-columns">
+          <article>
+            <h3>Mail</h3>
+            <p><a href="mailto:kenta.int.tech@gmail.com">kenta.int.tech@gmail.com</a></p>
+          </article>
+          <article>
+            <h3>Address</h3>
+            <p>
+              Tokyo-to 105-0023<br>
+              3-3-6 Shibaura, Minato-ku<br>
+              Institute of Science Tokyo · Campus Innovation Center INDEST
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© Kenta Kojima · Hardware Security Lab</p>
+    </footer>
+  </div>
 </body>
 
 </html>
